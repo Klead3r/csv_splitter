@@ -16,7 +16,7 @@ headerRow = []
 
 sys.stdout.write('\nSplitting file rows...\n')
 
-with open(fileName, encoding='utf-8', errors='ignore') as file:
+with open(fileName) as file:
     rows = csv.reader(file)
     for row in rows:
         if (rowCounter == -1 and fileCounter == 0):
